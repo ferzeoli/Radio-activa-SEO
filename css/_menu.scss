@@ -1,20 +1,34 @@
 @import "colores";
+@import "estilosmenu";
 
 /* -----------------------HEADER-------------------- */
 a:link, a:visited, a:active {
     text-decoration:none;
   }
 
+
+
+@media (min-width:480px){
+    
 header{
   background-color: $azul;
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
   width: 100%;
   position: fixed;
   z-index: 100;
   border-bottom: groove 2px $rojo;
 
 }
+}
+@media (min-width:800px){
+  header{
+
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+}
+
 
 .header__navbar{
 
@@ -31,8 +45,6 @@ header{
 
   li{
     display: inline-block;
-
-    
     }
   }
 
@@ -43,34 +55,81 @@ header{
 
 /*------------ BOTONES-------------- */
 
+
+
+
+@media (min-width:480px){
+  
 .btnini{
-  font-family: open sans;
-  text-align: center;
-  padding-left: 0.9rem;
-  padding-right: 0.9rem;
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
-  width: flex;
-  
+   font-family: map-get($celular, font-family);
+   font-size: map-get($celular, font-size);
+    text-align: map-get($celular, text-align);
+    padding-left: map-get($celular, padding-left);
+    padding-right: map-get($celular, padding-right);
+    padding-top: map-get($celular, padding-top);
+    padding-bottom: map-get($celular, padding-bottom);
+    width: flex,
 }
+
 .btnmid{
-  font-family: open sans;
-  text-align: center;
-  padding-left: 0.9rem;
-  padding-right: 0.9rem;
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
-  width: flex;
-  
+  font-family: map-get($celular, font-family);
+  font-size: map-get($celular, font-size);
+   text-align: map-get($celular, text-align);
+   padding-left: map-get($celular, padding-left);
+   padding-right: map-get($celular, padding-right);
+   padding-top: map-get($celular, padding-top);
+   padding-bottom: map-get($celular, padding-bottom);
+   width: flex,
 }
 
 .btnfin{
-  font-family: open sans;
-  text-align: center;
-  padding-left: 0.9rem;
-  padding-right: 0.9rem;
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
-  width: flex;
+  font-family: map-get($celular, font-family);
+  font-size: map-get($celular, font-size);
+   text-align: map-get($celular, text-align);
+   padding-left: map-get($celular, padding-left);
+   padding-right: map-get($celular, padding-right);
+   padding-top: map-get($celular, padding-top);
+   padding-bottom: map-get($celular, padding-bottom);
+   width: flex,
+}
+
+}
+
+
+@media (min-width:800px){
+  .btnini{
+    font-family: map-get($escritorio, font-family);
+    font-size: map-get($escritorio, font-size);
+     text-align: map-get($escritorio, text-align);
+     padding-left: map-get($escritorio, padding-left);
+     padding-right: map-get($escritorio, padding-right);
+     padding-top: map-get($escritorio, padding-top);
+     padding-bottom: map-get($escritorio, padding-bottom);
+     width: flex,
   
+}
+
+.btnmid{
+  font-family: map-get($escritorio, font-family);
+  font-size: map-get($escritorio, font-size);
+   text-align: map-get($escritorio, text-align);
+   padding-left: map-get($escritorio, padding-left);
+   padding-right: map-get($escritorio, padding-right);
+   padding-top: map-get($escritorio, padding-top);
+   padding-bottom: map-get($escritorio, padding-bottom);
+   width: flex,  
+}
+
+.btnfin{
+  font-family: map-get($escritorio, font-family);
+  font-size: map-get($escritorio, font-size);
+   text-align: map-get($escritorio, text-align);
+   padding-left: map-get($escritorio, padding-left);
+   padding-right: map-get($escritorio, padding-right);
+   padding-top: map-get($escritorio, padding-top);
+   padding-bottom: map-get($escritorio, padding-bottom);
+   width: flex,
+  
+}
+
 }

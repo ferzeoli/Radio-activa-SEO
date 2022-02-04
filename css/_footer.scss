@@ -1,0 +1,73 @@
+@import "colores";
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+  }
+
+footer{
+  background-color: $azul;
+  width: 100%;
+  border-top: groove 2px $rojo;
+
+}
+
+.footer__menu{
+
+  text-align: center;
+
+  :hover{
+    background-color: $verde;
+    font-weight: bold;
+    color: mintcream;
+    border-bottom-left-radius: 1rem; 
+    border-bottom-right-radius: 1rem;  
+    } 
+   
+
+  li{
+    display: inline-block;
+    
+    }
+  }
+
+  a{
+    color: $rojo;
+  }
+
+
+.logo{
+    margin-top: 1rem;
+    text-align: center;
+    animation-name: logo-animado;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+  .logoradio{
+    width: 5rem;
+}
+
+.letras{
+    text-align: center;
+}   
+
+.letrasradio{
+    height: 3rem;
+}
+
+@keyframes logo-animado {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(25deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(-25deg);}
+    100% {transform: rotate(0deg);}
+  }
+
+.footer__abajo {
+    text-decoration: none;
+    background-color: $amarillo;
+    text-align: center;
+    font-family: open sans;
+    font-size: 0.8rem;
+    padding: 1.5rem;
+    }

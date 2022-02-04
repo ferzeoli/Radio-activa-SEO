@@ -1,0 +1,76 @@
+@import "colores";
+
+/* -----------------------HEADER-------------------- */
+a:link, a:visited, a:active {
+    text-decoration:none;
+  }
+
+header{
+  background-color: $azul;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  border-bottom: groove 2px $rojo;
+
+}
+
+.header__navbar{
+
+  text-align: center;
+
+  :hover{
+    background-color: $verde;
+    font-weight: bold;
+    color: mintcream;  
+    border-top-left-radius: 1rem; 
+    border-top-right-radius: 1rem; 
+    }
+ 
+
+  li{
+    display: inline-block;
+
+    
+    }
+  }
+
+  a{
+    color: $rojo;
+  }
+
+
+/*------------ BOTONES-------------- */
+
+.btnini{
+  font-family: open sans;
+  text-align: center;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  width: flex;
+  
+}
+.btnmid{
+  font-family: open sans;
+  text-align: center;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  width: flex;
+  
+}
+
+.btnfin{
+  font-family: open sans;
+  text-align: center;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  width: flex;
+  
+}

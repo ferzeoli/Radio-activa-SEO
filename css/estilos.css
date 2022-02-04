@@ -1,0 +1,536 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* -----------------------HEADER-------------------- */
+a:link, a:visited, a:active {
+  text-decoration: none;
+}
+
+header {
+  background-color: #003D5B;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  border-bottom: groove 2px #D1495B;
+}
+
+.header__navbar {
+  text-align: center;
+}
+
+.header__navbar :hover {
+  background-color: #3ead47;
+  font-weight: bold;
+  color: mintcream;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.header__navbar li {
+  display: inline-block;
+}
+
+a {
+  color: #D1495B;
+}
+
+/*------------ BOTONES-------------- */
+.btnini {
+  font-family: open sans;
+  text-align: center;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  width: flex;
+}
+
+.btnmid {
+  font-family: open sans;
+  text-align: center;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  width: flex;
+}
+
+.btnfin {
+  font-family: open sans;
+  text-align: center;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  width: flex;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #003D5B;
+  width: 100%;
+  border-top: groove 2px #D1495B;
+}
+
+.footer__menu {
+  text-align: center;
+}
+
+.footer__menu :hover {
+  background-color: #3ead47;
+  font-weight: bold;
+  color: mintcream;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.footer__menu li {
+  display: inline-block;
+}
+
+a {
+  color: #D1495B;
+}
+
+.logo {
+  margin-top: 1rem;
+  text-align: center;
+  -webkit-animation-name: logo-animado;
+          animation-name: logo-animado;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  position: relative;
+}
+
+.logoradio {
+  width: 5rem;
+}
+
+.letras {
+  text-align: center;
+}
+
+.letrasradio {
+  height: 3rem;
+}
+
+@-webkit-keyframes logo-animado {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes logo-animado {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+.footer__abajo {
+  text-decoration: none;
+  background-color: #EDAE49;
+  text-align: center;
+  font-family: open sans;
+  font-size: 0.8rem;
+  padding: 1.5rem;
+}
+
+/*-------------- BOTONES---------*/
+.btn-ok {
+  text-transform: uppercase;
+  background-color: green;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.60rem;
+  padding-bottom: 0.60rem;
+  border-radius: 0.3rem;
+  border-color: #378955;
+  font-family: open sans;
+  font-weight: bolder;
+  color: #fff;
+}
+
+.btn-cancel {
+  text-transform: uppercase;
+  background-color: #da0202;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.60rem;
+  padding-bottom: 0.60rem;
+  border-radius: 0.3rem;
+  border-color: #e71b1b;
+  font-family: open sans;
+  font-weight: bolder;
+  color: #fff;
+}
+
+.btn-cargar {
+  text-transform: uppercase;
+  background-color: #1802da;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.60rem;
+  padding-bottom: 0.60rem;
+  border-radius: 0.3rem;
+  border-color: #1e1be7;
+  font-family: open sans;
+  font-weight: bolder;
+  color: #fff;
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .btn-ok {
+    text-transform: uppercase;
+    background-color: green;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    border-color: #378955;
+    font-family: open sans;
+    font-size: 0.7rem;
+    font-weight: bolder;
+    color: #fff;
+  }
+  .btn-cancel {
+    text-transform: uppercase;
+    background-color: #da0202;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    border-color: #e71b1b;
+    font-family: open sans;
+    font-size: 0.7rem;
+    font-weight: bolder;
+    color: #fff;
+  }
+  .btn-cargar {
+    text-transform: uppercase;
+    background-color: #1802da;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    border-color: #1e1be7;
+    font-family: open sans;
+    font-size: 0.7rem;
+    font-weight: bolder;
+    color: #fff;
+  }
+}
+
+body {
+  background-color: #00798C;
+}
+
+.contenido {
+  padding-top: 3.5rem;
+  padding-left: 2rem;
+}
+
+/*------------------ HOME ---------------*/
+#grillahome {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "video video publicidad" "novedades novedades novedades" "noticias noticias noticias" "footer footer footer";
+  -ms-grid-columns: 40% 40% 20%;
+      grid-template-columns: 40% 40% 20%;
+  margin: 2;
+}
+
+.video {
+  text-align: left;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: video;
+}
+
+.publicidad {
+  text-decoration: none;
+  color: thistle;
+  font-size: 0.8rem;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: publicidad;
+}
+
+.novedades {
+  padding-top: 3rem;
+  color: whitesmoke;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: novedades;
+  font-family: oswald;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.noticias {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: noticias;
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+container:hover {
+  -webkit-box-shadow: 0 0 20px #fff;
+          box-shadow: 0 0 20px #fff;
+}
+
+.imgnoticia {
+  height: 13rem;
+  max-width: 19rem;
+  border-radius: 0.5rem;
+  border-style: solid;
+}
+
+.noticia01, .noticia02, .noticia03 {
+  background-color: #EDAE49;
+  padding: 3rem;
+  padding-bottom: 2rem;
+  border-top-right-radius: 3rem;
+  border-top-left-radius: 0.7rem;
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 0.7rem;
+  width: 65rem;
+  margin: 3rem;
+  grid-area: noticia01;
+}
+
+.noticia02 {
+  background-color: #D1495B;
+  grid-area: noticia02;
+}
+
+.noticia03 {
+  background-color: #003D5B;
+  grid-area: noticia03;
+}
+
+.titulo__tarjeta {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-family: oswald;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.texto {
+  padding: 0.3rem;
+  font-family: open sans;
+  font-size: 1rem;
+  font-weight: light;
+  color: azure;
+}
+
+/*------------------ NOSOTROS ---------------*/
+.titulo__seccion {
+  font-family: oswald;
+  text-align: center;
+  font-weight: bold;
+  color: aliceblue;
+  font-size: 3.5rem;
+}
+
+.texto__a {
+  color: aliceblue;
+  font-family: open sans;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.card-deck {
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.card {
+  margin: 2rem;
+  background-color: #003D5B;
+  border-radius: 1.5rem;
+}
+
+.card :hover {
+  -webkit-box-shadow: 0 0 10px #fff;
+          box-shadow: 0 0 10px #fff;
+}
+
+.persona {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.nombre {
+  font-size: 1.5rem;
+  font-family: oswald;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.cargo {
+  padding-top: 0.3rem;
+  padding-bottom: 0.8rem;
+  font-family: open sans;
+  font-size: 1rem;
+  font-weight: light;
+  color: azure;
+}
+
+.formulario {
+  padding: 5rem;
+  text-align: center;
+  font-size: 1.3rem;
+  font-size: 1.3rem;
+  color: aliceblue;
+  font-family: open sans;
+  font-weight: 500;
+}
+
+.form-control {
+  margin-bottom: 1.3rem;
+  margin-top: 0.5rem;
+  min-width: 35rem;
+  border-radius: 2rem;
+  padding: 0.8rem;
+}
+
+.form-control:hover {
+  background-color: aliceblue;
+}
+
+.form-control:focus {
+  border-style: solid;
+  -webkit-box-shadow: 0 0 20px blueviolet;
+          box-shadow: 0 0 20px blueviolet;
+  border-width: 0.2rem;
+}
+
+.horarios {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.radio:focus {
+  -webkit-box-shadow: 0 0 20px #fff;
+          box-shadow: 0 0 20px #fff;
+}
+
+.form-text {
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+  min-width: 35rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.form-text:focus {
+  border-style: solid;
+  -webkit-box-shadow: 0 0 20px blueviolet;
+          box-shadow: 0 0 20px blueviolet;
+  border-width: 0.2rem;
+}
+
+/*------------------ PROGRAMAS ---------------*/
+.programas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 2rem;
+}
+
+.programa1 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 45%;
+  padding-bottom: 1rem;
+}
+
+.programa1 :hover {
+  background-color: #EDAE49;
+}
+
+.contenidotarjeta {
+  padding: 2rem;
+  background-color: #D1495B;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.fotoprograma {
+  max-width: 50%;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.titulotarjeta {
+  padding-left: 0.3rem;
+  font-size: 1.3rem;
+  font-family: oswald;
+  font-weight: bold;
+  color: aliceblue;
+}
+/*# sourceMappingURL=estilos.css.map */

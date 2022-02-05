@@ -219,6 +219,7 @@ container:hover {
   
   .card-deck {
     display: flex;
+    justify-content: space-evenly;
   
   }
   
@@ -398,8 +399,7 @@ box-shadow: 0 0 20px #fff;
       }
 
       .titulotarjeta{
-
-        font-size: 1rem;
+        font-size: 1.3rem;
         font-family: oswald;
         font-weight: bold;
         color: aliceblue;

@@ -513,6 +513,9 @@ container:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 
@@ -663,7 +666,7 @@ container:hover {
     border-top-right-radius: 1rem;
   }
   .titulotarjeta {
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-family: oswald;
     font-weight: bold;
     color: aliceblue;

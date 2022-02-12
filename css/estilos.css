@@ -5,13 +5,13 @@
           box-sizing: border-box;
 }
 
-/*--------------- 480 -----------*/
+/*--------------- CELULAR -----------*/
 /* -----------------------HEADER-------------------- */
 a:link, a:visited, a:active {
   text-decoration: none;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 1px) {
   header {
     background-color: #003D5B;
     border-bottom-left-radius: 1rem;
@@ -51,7 +51,7 @@ a {
 }
 
 /*------------ BOTONES-------------- */
-@media (min-width: 480px) {
+@media (min-width: 1px) {
   .btnini {
     font-family: open sans;
     font-size: 0.7rem;
@@ -124,11 +124,11 @@ a:link, a:visited, a:active {
 footer {
   background-color: #003D5B;
   width: 100%;
-  border-top: groove 2px #D1495B;
 }
 
 .footer__menu {
   margin-top: 2rem;
+  border-top: groove 2px #D1495B;
   text-align: center;
 }
 
@@ -151,6 +151,10 @@ a {
 .logo {
   margin-top: 1rem;
   text-align: center;
+}
+
+.logoradio {
+  width: 5rem;
   -webkit-animation-name: logo-animado;
           animation-name: logo-animado;
   -webkit-animation-duration: 5s;
@@ -158,10 +162,6 @@ a {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   position: relative;
-}
-
-.logoradio {
-  width: 5rem;
 }
 
 .letras {
@@ -270,7 +270,7 @@ a {
   color: #fff;
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 1px) and (max-width: 768px) {
   .btn-ok {
     text-transform: uppercase;
     background-color: green;
@@ -315,7 +315,7 @@ a {
   }
 }
 
-/*--------------- 480 -----------*/
+/*--------------- CELULAR -----------*/
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, menu, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
   margin: 0;
   padding: 0;
@@ -517,7 +517,7 @@ body {
 }
 
 /*------------------ HOME ---------------*/
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 1px) and (max-width: 768px) {
   .video {
     text-align: center;
     margin-right: 2rem;
@@ -769,7 +769,7 @@ container:hover {
 }
 
 /*------------------ NOSOTROS ---------------*/
-@media (min-width: 480px) {
+@media (min-width: 1px) {
   .titulo__seccion {
     padding-bottom: 2rem;
     font-family: oswald;
@@ -903,7 +903,7 @@ container:hover {
 }
 
 /*--------------- FORMULARIOS -----------*/
-@media (min-width: 480px) {
+@media (min-width: 1px) {
   .formulario {
     padding: 2rem;
     text-align: center;
@@ -1049,5 +1049,54 @@ container:hover {
   }
 }
 
-/*------------------ PROGRAMAS ---------------*/
+/*------------------ NOTICIAS ---------------*/
+.info {
+  padding-top: 5rem;
+  text-align: center;
+}
+
+@media (min-width: 1px) {
+  .imginfo {
+    max-height: 25rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+  .textoinfo {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    color: aliceblue;
+    font-family: open sans;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 768px) {
+  .imginfo {
+    max-height: 35rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+  .textoinfo {
+    padding-left: 7rem;
+    padding-right: 7rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 1024px) {
+  .imginfo {
+    max-height: 50rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+  .textoinfo {
+    padding-left: 20rem;
+    padding-right: 20rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 300;
+  }
+}
 /*# sourceMappingURL=estilos.css.map */

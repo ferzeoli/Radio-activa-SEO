@@ -7,13 +7,11 @@ a:link, a:visited, a:active {
 footer{
   background-color: $azul;
   width: 100%;
-  border-top: groove 2px $rojo;
-
 }
 
 .footer__menu{
   margin-top: 2rem;
-
+  border-top: groove 2px $rojo;
   text-align: center;
 
   :hover{
@@ -39,14 +37,14 @@ footer{
 .logo{
     margin-top: 1rem;
     text-align: center;
-    animation-name: logo-animado;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    position: relative;
 }
   .logoradio{
     
     width: 5rem;
+    animation-name: logo-animado;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: relative;
 }
 
 .letras{

@@ -23,7 +23,7 @@ body {
 /*------------------ HOME ---------------*/
 
 
-@media (min-width:480px) and (max-width:768px) { 
+@media (min-width:1px) and (max-width:768px) { 
 
   .video{
     text-align: center;
@@ -288,7 +288,7 @@ container:hover {
 /*------------------ NOSOTROS ---------------*/
 
 
-@media (min-width:480px){
+@media (min-width:1px){
 .titulo__seccion {
   padding-bottom: 2rem;
   font-family: oswald;
@@ -453,7 +453,7 @@ container:hover {
 
 
 
-@media (min-width:480px){
+@media (min-width:1px){
 .formulario{
   padding: 2rem;
   text-align: center;
@@ -616,6 +616,66 @@ box-shadow: 0 0 20px #fff;
           }
     
 
-/*------------------ PROGRAMAS ---------------*/
+/*------------------ NOTICIAS ---------------*/
+
+.info{
+  padding-top: 5rem;
+  text-align: center;
+}
 
 
+@media (min-width:1px){
+
+  .imginfo{
+    max-height: 25rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+
+  }
+  
+  .textoinfo {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    color: aliceblue;
+    font-family: open sans;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+
+@media (min-width:768px){
+
+  .imginfo{
+    max-height: 35rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+
+  }
+  
+  .textoinfo {
+    padding-left: 7rem;
+    padding-right: 7rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+}
+
+
+@media (min-width:1024px){
+
+  .imginfo{
+    max-height: 50rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+
+  }
+  
+  .textoinfo {
+
+    padding-left: 20rem;
+    padding-right: 20rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 300;
+  }
+}

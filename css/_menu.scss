@@ -8,7 +8,7 @@ a:link, a:visited, a:active {
 
 
 
-@media (min-width:480px){
+@media (min-width:1px){
     
 header{
   background-color: $azul;
@@ -58,7 +58,7 @@ header{
 
 
 
-@media (min-width:480px){
+@media (min-width:1px){
   
 .btnini{
    font-family: map-get($celular, font-family);

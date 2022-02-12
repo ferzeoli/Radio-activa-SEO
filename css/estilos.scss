@@ -9,6 +9,7 @@
 @import "botones";
 @import "colores";
 @import "estilosmenu";
+@import "carousel";
 
 body {
   background-color: $celeste;
@@ -22,7 +23,7 @@ body {
 /*------------------ HOME ---------------*/
 
 
-@media (min-width:480px) and (max-width:800px) { 
+@media (min-width:480px) and (max-width:768px) { 
 
   .video{
     text-align: center;
@@ -67,7 +68,8 @@ body {
     
   }
 }
-  @media (min-width:800px){
+  @media (min-width:768px)and (max-width:1024px) {
+
 #grillahome {
 
   display: grid;
@@ -91,7 +93,7 @@ body {
 .publicidad {
   text-decoration: none;
   color: thistle;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   grid-area: publicidad;
 }
 
@@ -105,12 +107,26 @@ body {
 
 }
 
-.noticias {
-  grid-area: noticias;
-  padding: 3rem;
-  display: flex;
+.noticias{
+  align-items: center;
   text-align: center;
+  display: inline-block;
+  margin-right: 2rem;
+}  
+
+.noticia01{
+  max-width: 35rem;
+  display: inline-block;
 }
+
+.noticia02{
+  max-width: 35rem;
+  display: inline-block;
+}
+.noticia03{
+  max-width: 35rem;
+  display: inline-block;
+}  
 }
 
 container:hover {
@@ -135,26 +151,23 @@ container:hover {
   border-bottom-left-radius: 3rem;
   border-bottom-right-radius: 0.7rem;
   width: 65rem;
-  margin: 3rem;
-  grid-area: noticia01;
+  margin: 2rem;
 }
 
 
 .noticia02 {
   @extend .noticia01;
   background-color: $rojo;
-  grid-area: noticia02;
 }
 
 .noticia03 {
   @extend .noticia01;
   background-color: $azul;
-  grid-area: noticia03;
 }
 
 .titulo__tarjeta {
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: oswald;
   font-weight: bold;
   color: aliceblue;
@@ -164,17 +177,120 @@ container:hover {
 .texto {
   padding: 0.3rem;
   font-family: open sans;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: light;
   color: azure;
 }
 
+@media (min-width:1024px) {
+
+  #grillahome {
+  
+    display: grid;
+    grid-template-areas:
+      "video video publicidad"
+      "novedades novedades novedades"
+      "noticias noticias noticias"
+      "footer footer footer";
+  
+  
+    grid-template-columns: 40% 40% 20%;
+    margin: 2;
+  }
+  
+  
+  .video {
+    text-align: left;
+    grid-area: video;
+  }
+  
+  .publicidad {
+    text-decoration: none;
+    color: thistle;
+    font-size: 0.6rem;
+    grid-area: publicidad;
+  }
+  
+  .novedades {
+    padding-top: 3rem;
+    color: whitesmoke;
+    grid-area: novedades;
+    font-family: oswald;
+    font-size: 2rem;
+    text-align: center;
+  
+  }
+  
+  .noticias {
+    grid-area: noticias;
+    padding: 3rem;
+    display: flex;
+    text-align: center;
+  }
+  }
+  
+  container:hover {
+    box-shadow: 0 0 20px #fff;
+  }
+  
+  
+  .imgnoticia {
+    height: 13rem;
+    max-width: 19rem;
+    border-radius: 0.5rem;
+    border-style: solid;
+  }
+  
+  
+  .noticia01 {
+    background-color: $amarillo;
+    padding: 3rem;
+    padding-bottom: 2rem;
+    border-top-right-radius: 3rem;
+    border-top-left-radius: 0.7rem;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 0.7rem;
+    width: 65rem;
+    margin: 3rem;
+    grid-area: noticia01;
+  }
+  
+  
+  .noticia02 {
+    @extend .noticia01;
+    background-color: $rojo;
+    grid-area: noticia02;
+  }
+  
+  .noticia03 {
+    @extend .noticia01;
+    background-color: $azul;
+    grid-area: noticia03;
+  }
+  
+  .titulo__tarjeta {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: oswald;
+    font-weight: bold;
+    color: aliceblue;
+  }
+  
+  
+  .texto {
+    padding: 0.3rem;
+    font-family: open sans;
+    font-size: 1rem;
+    font-weight: light;
+    color: azure;
+  }
 
 /*------------------ NOSOTROS ---------------*/
 
 
 @media (min-width:480px){
 .titulo__seccion {
+  padding-bottom: 2rem;
   font-family: oswald;
   text-align: center;
   font-weight: bold;
@@ -197,6 +313,7 @@ container:hover {
 }
 
 .card {
+      max-width: fit-content;
   margin: 2rem;
   background-color: $azul;
   border-radius: 1.5rem;
@@ -207,28 +324,11 @@ container:hover {
 
   }
 }
-}
-
-@media (min-width:800px){
-  .titulo__seccion {
-    font-size: 3.5rem;
-  }
-  
-  .texto__a {
-    font-size: 1.5rem;}
-  
-  .card-deck {
-    display: flex;
-    justify-content: space-evenly;
-  
-  }
-  
-}
-
 
 .persona {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
+  max-width: 20rem;
 
 }
 
@@ -250,6 +350,104 @@ container:hover {
   color: azure;
 }
 
+}
+
+@media (min-width:768px) and (max-width:1024px){
+  .titulo__seccion {
+    font-size: 3rem;
+  }
+  
+  .texto__a {
+    font-size: 1.2rem;}
+  
+    .card-deck {
+      padding: 3rem;
+      text-align: center;
+    
+    }
+    
+    .card {
+      margin: 2rem;
+      max-width: fit-content;
+      background-color: $azul;
+      border-radius: 1.5rem;
+    
+    
+      :hover {
+        box-shadow: 0 0 10px #fff;
+    
+      }
+    }
+  
+
+.persona {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  min-width: 15rem;
+
+}
+
+.nombre {
+  font-size: 1rem;
+  font-family: oswald;
+  font-weight: bold;
+  color: aliceblue;
+
+}
+
+.cargo {
+
+  padding-top: 0.3rem;
+  padding-bottom: 0.8rem;
+  font-family: open sans;
+  font-size: 1rem;
+  font-weight: light;
+  color: azure;
+}
+
+}
+
+@media (min-width:1024px){
+  .titulo__seccion {
+    font-size: 3.5rem;
+  }
+  
+  .texto__a {
+    font-size: 1.5rem;}
+  
+  .card-deck {
+    display: flex;
+    justify-content: space-evenly;
+  
+  }
+
+
+.persona {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  max-width: 20rem;
+
+}
+
+.nombre {
+  font-size: 1.5rem;
+  font-family: oswald;
+  font-weight: bold;
+  color: aliceblue;
+
+}
+
+.cargo {
+
+  padding-top: 0.3rem;
+  padding-bottom: 0.8rem;
+  font-family: open sans;
+  font-size: 1rem;
+  font-weight: light;
+  color: azure;
+}
+
+}
 
 /*--------------- FORMULARIOS -----------*/
 
@@ -308,7 +506,7 @@ box-shadow: 0 0 20px #fff;
     }
   }
    
-  @media (min-width:800px){
+  @media (min-width:768px){
     .formulario{
       padding: 5rem;
       text-align: center;
@@ -362,89 +560,62 @@ box-shadow: 0 0 20px #fff;
         }
       }
 
-
+ 
+      @media (min-width:1024px){
+        .formulario{
+          padding: 5rem;
+          text-align: center;
+          font-size: 1.3rem;
+          font-size: 1.3rem;
+          color: aliceblue;
+          font-family: open sans;
+          font-weight: 500;
+        }
+        
+        .form-control{
+          margin-bottom: 1.3rem;
+          margin-top: 0.5rem;
+          min-width: 35rem;
+          border-radius: 2rem;
+          padding: 0.8rem;
+          
+        }
+         .form-control:hover{
+            background-color: aliceblue;
+        
+          }
+          .form-control:focus{
+            border-style: solid;
+            box-shadow: 0 0 20px blueviolet;
+            border-width: 0.2rem;
+          }
+          
+        
+        .horarios{
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+        }
+        
+        
+        .radio:focus{  
+        box-shadow: 0 0 20px #fff;
+        }
+        
+        .form-text{
+          margin-bottom: 1.5rem;
+          margin-top: 0.5rem;
+          min-width: 35rem;
+          border-radius: 0.5rem;
+          padding: 1rem;
+        }
+         .form-text:focus{  
+          border-style: solid;
+          box-shadow: 0 0 20px blueviolet;
+          border-width: 0.2rem;
+            }
+          }
+    
 
 /*------------------ PROGRAMAS ---------------*/
 
 
-@media (min-width:480px) and (max-width:800px){
-
-  .programas{
-    display: block;
-    padding-top: 2rem;
-  }
-    .programa1{
-
-      display: block;
-      max-width: 50rem;
-      padding-bottom: 1rem;
-    
-      :hover{
-        background-color: $amarillo;
-      }
-    }
-      .contenidotarjeta{
-        margin-left: 2rem;
-        margin-right: 2rem;
-        padding: 2rem;
-        background-color: $rojo;
-        border-bottom-left-radius: 1rem;
-        border-bottom-right-radius: 1rem;
-      }
-      
-      .fotoprograma{
-        max-width: 90%;
-        border-top-left-radius: 1rem;
-        border-top-right-radius: 1rem;
-      }
-
-      .titulotarjeta{
-        font-size: 1.3rem;
-        font-family: oswald;
-        font-weight: bold;
-        color: aliceblue;
-      }
-
-}
-
-@media (min-width:800px){
-  .programas{
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 2rem;
-
-  }
-  
-.programa1{
-
-  display: inline-flex;
-  width: 45%;
-  padding-bottom: 1rem;
-
-  
-  :hover{
-    background-color: $amarillo;
-  }
-}
-.contenidotarjeta{
-  padding: 2rem;
-  background-color: $rojo;
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-}
-
-.fotoprograma{
-  max-width: 50%;
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
-}
-
-.titulotarjeta{
-
-  padding-left: 0.3rem;
-  font-size: 1.3rem;
-  font-family: oswald;
-  font-weight: bold;
-  color: aliceblue;
-}
-}

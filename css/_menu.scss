@@ -21,7 +21,7 @@ header{
 
 }
 }
-@media (min-width:800px){
+@media (min-width:768px){
   header{
 
     border-bottom-left-radius: 2rem;
@@ -96,7 +96,7 @@ header{
 }
 
 
-@media (min-width:800px){
+@media (min-width:768px){
   .btnini{
     font-family: map-get($escritorio, font-family);
     font-size: map-get($escritorio, font-size);

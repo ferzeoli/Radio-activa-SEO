@@ -33,86 +33,130 @@
     </header>
 
 
-    <div class="contenido">
+    <div class="contenidoprogramas">
 
       <h1 class="titulo__seccion">Nuestra programación</h1>
 
-      <section class="programas">
 
 
-        <div class="programa1">
-          <img class="fotoprograma" src="../img/img01.jpg" alt="Programa arrancando el día">
-          <div class="contenidotarjeta">
-            <p class="titulotarjeta">05.00 a 09.00</p>
-            <p class="titulotarjeta">Arrancando el día</p>
-            <div class="texto">Nuestros locutores te despiertan con todas las noticias, para que arranques el día bien informado.</div>
+
+      <section class="carousel">
+        <div id="slideBuffer">
+          <img src="/img/img01.jpg" />
+        </div>
+        <input type="radio" name="nav" value="1" id="slide1" checked>
+        <label for="slide1"></label>
+        <div class="slide" style="background-image:url(/img/imgradio.png)">
+          <img src="/img/img01.jpg" />
+          <div class="bulletContainer">
+            <a class="bullet bulletSelected"></a>
+            <a class="bullet"></a>
+            <a class="bullet"></a>
+            <a class="bullet"></a>
+            <a class="bullet"></a>
+            <a class="bullet"></a>
+          </div>
+          <div class="caption carouselCaption">
+            <p class="horario">05.00 a 09.00 - Arrancando el día</p>
+            <p class="descripciontarjeta"> Nuestros locutores te despiertan con todas las noticias, para que arranques el día bien informado.</p>
           </div>
         </div>
 
-        <div class="programa1">
-          <img class="fotoprograma" src="../img/img02.jpg" alt="Programa saliendo de la cama">
-          <div class="contenidotarjeta">
-            <p class="titulotarjeta">09.00 a 13.00</p>
-            <p class="titulotarjeta">Saliendo de la cama</p>
-            <div class="texto">Porque salir de la cama es el momento más difícil del día, nuestros locutores te siguen haciendo compañía para que tengas la mejor mañana.</div>
+        <input type="radio" name="nav" value="2" id="slide2">
+        <label for="slide2"></label>
+        <div class="slide" style="background-image:url(/img/imgradio.png)">
+          <img src="/img/img02.jpg" />
+          <div class="bulletContainer">
+            <a class="bullet"></a>
+            <a class="bullet bulletSelected"></a>
+            <a class="bullet"></a>
+            <a class="bullet"></a>
+            <a class="bullet"></a>
+            <a class="bullet"></a>
+          </div>
+          <div class="caption carouselCaption">
+            <p class="horario">09.00 a 13.00 - Saliendo de la cama</p>
+            <p class="descripciontarjeta"> Porque salir de la cama es el momento más difícil del día, nuestros locutores te siguen haciendo compañía para que tengas la mejor mañana.</p>
           </div>
         </div>
 
+        <input type="radio" name="nav" value="3" id="slide3">
+        <label for="slide3"></label>
+        <div class="slide" style="background-image:url(/img/imgradio.png)">
+          <img src="/img/img03.jpg" />
+          <div class="bulletContainer">
+            <a class="bullet"></a>
+            <a class="bullet"></a>
+            <a class="bullet bulletSelected"></a>
+            <a class="bullet"></a>
+            <a class="bullet"></a>
+            <a class="bullet"></a>
+          </div>
+          <div class="caption carouselCaption">
+            <p class="horario">13.00 a 17.00 - Almuerzo y merienda</p>
+            <p class="descripciontarjeta"> ¿Para qué prender la tele si podés escuchar la radio? ¡Almorzá con nosotros en este mágazine informal conducido por nuestros locutores de siempre!</p>
+          </div>
+        </div>
+
+        <input type="radio" name="nav" value="4" id="slide4">
+        <label for="slide4"></label>
+        <div class="slide" style="background-image:url(/img/imgradio.png)">
+          <img src="/img/img04.jpg" />
+          <div class="bulletContainer">
+            <a class="bullet"></a>
+            <a class="bullet"></a>
+            <a class="bullet"></a>
+            <a class="bullet bulletSelected"></a>
+            <a class="bullet"></a>
+            <a class="bullet"></a>
+          </div>
+          <div class="caption carouselCaption">
+            <p class="horario">17.00 a 21.00 - Volviendo a casa</p>
+            <p class="descripciontarjeta"> En el auto, el colectivo o el tren, nuestros locutores te acompañan en la vuelta a casa.</p>
+          </div>
+        </div>
+
+        <input type="radio" name="nav" value="5" id="slide5">
+        <label for="slide5"></label>
+        <div class="slide" style="background-image:url(/img/imgradio.png)">
+          <img src="/img/img05.jpg" />
+          <div class="bulletContainer">
+            <a class="bullet"></a>
+            <a class="bullet"></a>
+            <a class="bullet"></a>
+            <a class="bullet"></a>
+            <a class="bullet bulletSelected"></a>
+            <a class="bullet"></a>
+          </div>
+          <div class="caption carouselCaption">
+            <p class="horario">21.00 a 23.00 - Ganas de nada</p>
+            <p class="descripciontarjeta"> Nuestros locutores completamente detonados siguen trabajando porque necesitan la plata. A esta hora de la noche no podemos prometerte un gran programa pero qué se yo... Quedate a escucharlos para que no se sientan solos.</p>
+          </div>
+        </div>
+
+        <input type="radio" name="nav" value="6" id="slide6">
+        <label for="slide6"></label>
+        <div class="slide" style="background-image:url(/img/imgradio.png)">
+          <img src="/img/img06.jpg" />
+          <div class="bulletContainer">
+            <a class="bullet"></a>
+            <a class="bullet"></a>
+            <a class="bullet"></a>
+            <a class="bullet"></a>
+            <a class="bullet"></a>
+            <a class="bullet bulletSelected"></a>
+          </div>
+          <div class="caption carouselCaption">
+            <p class="horario">23.00 a 05.00 - Música para torrar</p>
+            <p class="descripciontarjeta"> El Ministerio de trabajo dijo que teníamos que darle por lo menos 6 horas de descanso a nuestros locutores, así que llenamos este pedacito con música. La verdad que no sabemos qué hay porque la repetimos de Aspen.</p>
+          </div>
+        </div>
       </section>
 
-      <section class="programas">
 
-        <div class="programa1">
-          <img class="fotoprograma" src="../img/img03.jpg" alt="Programa almuerzo y merienda">
-          <div class="contenidotarjeta">
-            <p class="titulotarjeta">13.00 a 17.00</p>
-            <p class="titulotarjeta">Almuerzo y merienda</p>
-            <div class="texto">¿Para qué prender la tele si podés escuchar la radio? ¡Almorzá con nosotros en este mágazine informal conducido por nuestros locutores de siempre!</div>
-          </div>
-        </div>
-
-
-        <div class="programa1">
-          <img class="fotoprograma" src="../img/img04.jpg" alt="Programa volviendo a casa">
-          <div class="contenidotarjeta">
-            <p class="titulotarjeta">17.00 a 21.00</p>
-            <p class="titulotarjeta">Volviendo a casa</p>
-            <div class="texto">En el auto, el colectivo o el tren, nuestros locutores te acompañan en la vuelta a casa</div>
-          </div>
-        </div>
-
-      </section>
-
-
-      <section class="programas">
-
-
-        <div class="programa1">
-          <img class="fotoprograma" src="../img/img05.jpg" alt="programa ganas de nada">
-          <div class="contenidotarjeta">
-            <p class="titulotarjeta">21.00 a 23.00</p>
-            <p class="titulotarjeta">Ganas de nada</p>
-            <div class="texto">Nuestros locutores completamente detonados siguen trabajando porque necesitan la plata. A esta hora de la noche no podemos prometerte un gran programa pero qué se yo... Quedate a escucharlos para que no se sientan solos.</div>
-          </div>
-        </div>
-
-        <div class="programa1">
-          <img class="fotoprograma" src="../img/img06.jpg" alt="programa musica para torrar">
-          <div class="contenidotarjeta">
-            <p class="titulotarjeta">23.00 a 05.00</p>
-            <p class="titulotarjeta">Música para torrar</p>
-            <div class="texto">El Ministerio de trabajo dijo que teníamos que darle por lo menos 6 horas de descanso a nuestros locutores, así que llenamos este pedacito con música. La verdad que no sabemos qué hay porque la repetimos de Aspen.</div>
-          </div>
-        </div>
-
-      </section>
 
 
     </div>
-
-
-
-
     <footer class="footer">
 
       <ul class="footer__menu">

@@ -17,7 +17,6 @@ body {
 
 .contenido {
   padding-top: 3.5rem;
-  padding-left: 2rem;
 }
 
 /*------------------ HOME ---------------*/
@@ -26,6 +25,7 @@ body {
 @media (min-width:1px) and (max-width:768px) { 
 
   .video{
+    margin-left: 2rem;
     text-align: center;
     margin-right: 2rem;
   }
@@ -67,6 +67,9 @@ body {
       text-align: center;
     
   }
+  .datos{
+    text-align: center;
+  }
 }
   @media (min-width:768px)and (max-width:1024px) {
 
@@ -86,6 +89,7 @@ body {
 
 
 .video {
+  margin-left: 2rem;
   text-align: left;
   grid-area: video;
 }
@@ -108,7 +112,6 @@ body {
 }
 
 .noticias{
-  align-items: center;
   text-align: center;
   display: inline-block;
   margin-right: 2rem;
@@ -200,6 +203,7 @@ container:hover {
   
   
   .video {
+    padding-left: 3rem;
     text-align: left;
     grid-area: video;
   }
@@ -455,13 +459,14 @@ container:hover {
 
 @media (min-width:1px){
 .formulario{
-  padding: 2rem;
   text-align: center;
+  padding: 2rem;
   font-size: 1rem;
   color: aliceblue;
   font-family: open sans;
   font-weight: 500;
 }
+
 
 .form-control{
   margin-bottom: 1rem;
@@ -481,7 +486,6 @@ container:hover {
     border-width: 0.2rem;
   }
   
-
 .horarios{
   margin-top: 1rem;
   margin-bottom: 1rem;

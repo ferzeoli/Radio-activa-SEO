@@ -635,12 +635,12 @@ body {
 
 .contenido {
   padding-top: 3.5rem;
-  padding-left: 2rem;
 }
 
 /*------------------ HOME ---------------*/
 @media (min-width: 1px) and (max-width: 768px) {
   .video {
+    margin-left: 2rem;
     text-align: center;
     margin-right: 2rem;
   }
@@ -684,6 +684,9 @@ body {
     font-family: oswald;
     text-align: center;
   }
+  .datos {
+    text-align: center;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -696,6 +699,7 @@ body {
     margin: 2;
   }
   .video {
+    margin-left: 2rem;
     text-align: left;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -722,9 +726,6 @@ body {
     text-align: center;
   }
   .noticias {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     text-align: center;
     display: inline-block;
     margin-right: 2rem;
@@ -801,6 +802,7 @@ container:hover {
     margin: 2;
   }
   .video {
+    padding-left: 3rem;
     text-align: left;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -1027,8 +1029,8 @@ container:hover {
 /*--------------- FORMULARIOS -----------*/
 @media (min-width: 1px) {
   .formulario {
-    padding: 2rem;
     text-align: center;
+    padding: 2rem;
     font-size: 1rem;
     color: aliceblue;
     font-family: open sans;
